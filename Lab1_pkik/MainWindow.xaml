@@ -1,0 +1,40 @@
+﻿<Window x:Class="Lab1_pkik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1_pkik"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Width="120">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <TextBox Name="tbPrimeNum" VerticalAlignment="Center" Width="40" MaxLength="5" TextChanged="tbPrimeNum_TextChanged" ></TextBox>
+                    <Label Name="labIsPrime" Content="wynik"></Label>
+                </StackPanel>
+                <Button Name="bPrimeNum" Content="Sprawdź czy pierwsza" Click="bPrimeNum_Click"></Button>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Label Content="Podaj zakres" HorizontalAlignment="Center"></Label>
+                    <TextBox Name="tbRange" VerticalAlignment="Center" Width="40" MaxLength="5" TextChanged="tbRange_TextChanged" ></TextBox>
+                </StackPanel>
+                <Button Name="bSieveOfErato" Content="Sito Eratostenesa" Click="bSieveOfErato_Click"></Button>
+                <TextBlock Name="tblPrimes" TextWrapping="WrapWithOverflow"></TextBlock>
+                <Button Name="bSaveToFile" Content="Zapisz do pliku" Click="bSaveToFile_Click"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="120">
+                <Label Content="Podaj a i b" HorizontalAlignment="Center"></Label>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Name="tbA" Width="30" MaxLength="4" TextChanged="tbA_TextChanged" Margin="0,0,2,0"></TextBox>
+                    <TextBox Name="tbB" Width="30" MaxLength="4" TextChanged="tbB_TextChanged" Margin="2,0,0,0"></TextBox>
+                </StackPanel>
+                <Label Name="labGCD" Content="wynik" HorizontalAlignment="Center"></Label>
+                <ComboBox Name="combMethod" SelectedIndex="0">
+                    <ComboBoxItem>Algorytm Euklidesa</ComboBoxItem>
+                    <ComboBoxItem>Rozszerzony algorytm Euklidesa</ComboBoxItem>
+                </ComboBox>
+                <Button Name="bCalcGCD" Content="Oblicz NWD" Click="bCalcGCD_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

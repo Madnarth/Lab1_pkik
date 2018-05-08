@@ -1,0 +1,14 @@
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\bin\Debug\Lab1_pkik.exe.config
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\bin\Debug\Lab1_pkik.exe
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\bin\Debug\Lab1_pkik.pdb
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\Lab1_pkik.csprojResolveAssemblyReference.cache
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\MainWindow.g.cs
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\App.g.cs
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\Lab1_pkik_MarkupCompile.cache
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\Lab1_pkik_MarkupCompile.lref
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\MainWindow.baml
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\Lab1_pkik.g.resources
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\Lab1_pkik.Properties.Resources.resources
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\Lab1_pkik.csproj.GenerateResource.Cache
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\Lab1_pkik.exe
+E:\Dokumenty\GitHub\Lab1_pkik\Lab1_pkik\obj\Debug\Lab1_pkik.pdb
