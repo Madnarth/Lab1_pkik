@@ -5,10 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab1_pkik"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Laboratorium 1" Height="350" Width="400">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-            <StackPanel Orientation="Vertical" Width="120">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFDCA7EC" Offset="0"/>
+                <GradientStop Color="#FF5E3B68" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type StackPanel}">
+                    <Setter Property="Margin" Value="5,0,5,0"></Setter>
+                    <Setter Property="Orientation" Value="Vertical"></Setter>
+                </Style>
+            </StackPanel.Resources>
+            <StackPanel MaxWidth="150">
                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                     <TextBox Name="tbPrimeNum" VerticalAlignment="Center" Width="40" MaxLength="5" TextChanged="tbPrimeNum_TextChanged" ></TextBox>
                     <Label Name="labIsPrime" Content="wynik"></Label>
@@ -22,11 +40,16 @@
                 <TextBlock Name="tblPrimes" TextWrapping="WrapWithOverflow"></TextBlock>
                 <Button Name="bSaveToFile" Content="Zapisz do pliku" Click="bSaveToFile_Click"></Button>
             </StackPanel>
-            <StackPanel Orientation="Vertical" Width="120">
+            <StackPanel MaxWidth="150">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type TextBox}">
+                        <Setter Property="Margin" Value="2,0,2,0"></Setter>
+                    </Style>
+                </StackPanel.Resources>
                 <Label Content="Podaj a i b" HorizontalAlignment="Center"></Label>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBox Name="tbA" Width="30" MaxLength="4" TextChanged="tbA_TextChanged" Margin="0,0,2,0"></TextBox>
-                    <TextBox Name="tbB" Width="30" MaxLength="4" TextChanged="tbB_TextChanged" Margin="2,0,0,0"></TextBox>
+                    <TextBox Name="tbA" Width="30" MaxLength="4" TextChanged="tbA_TextChanged"></TextBox>
+                    <TextBox Name="tbB" Width="30" MaxLength="4" TextChanged="tbB_TextChanged"></TextBox>
                 </StackPanel>
                 <Label Name="labGCD" Content="wynik" HorizontalAlignment="Center"></Label>
                 <ComboBox Name="combMethod" SelectedIndex="0">
@@ -34,6 +57,21 @@
                     <ComboBoxItem>Rozszerzony algorytm Euklidesa</ComboBoxItem>
                 </ComboBox>
                 <Button Name="bCalcGCD" Content="Oblicz NWD" Click="bCalcGCD_Click"></Button>
+                <Label Content="Podaj b, n i mod" HorizontalAlignment="Center"></Label>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Name="tbBn" Width="30" MaxLength="4" TextChanged="tbBn_TextChanged"></TextBox>
+                    <TextBox Name="tbN" Width="30" MaxLength="4" TextChanged="tbN_TextChanged"></TextBox>
+                    <TextBox Name="tbM" Width="30" MaxLength="4" TextChanged="tbM_TextChanged"></TextBox>
+                </StackPanel>
+                <Label Name="labPowModFast" Content="wynik" HorizontalAlignment="Center"></Label>
+                <Button Name="bCalcPowModFast" Content="Oblicz IPdK" Click="bCalcPowModFast_Click"></Button>
+                <Label Content="Podaj n i k" HorizontalAlignment="Center"></Label>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Name="tbNn" Width="30" MaxLength="4" TextChanged="tbNn_TextChanged"></TextBox>
+                    <TextBox Name="tbK" Width="30" MaxLength="4" TextChanged="tbK_TextChanged"></TextBox>
+                </StackPanel>
+                <Label Name="labMiller" Content="wynik" HorizontalAlignment="Center"></Label>
+                <Button Name="bCalcMiller" Content="Test Rabina-Millera" Click="bCalcMiller_Click"></Button>
             </StackPanel>
         </StackPanel>
     </Grid>
